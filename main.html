@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Смартфон A - Товар</title>
+  <style>
+    :root {
+      --primary-color: #a38068;
+      --accent-color: #e67e22;
+      --light-bg: #553409;
+      --dark-text: #333;
+      --border-radius: 8px;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: var(--light-bg);
+      color: var(--dark-text);
+    }
+    header, footer {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 1rem;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    .search-bar {
+      flex: 1;
+      margin: 0 1rem;
+      display: flex;
+    }
+    .search-bar input {
+      flex: 1;
+      padding: 0.5rem;
+      border: none;
+      border-radius: var(--border-radius) 0 0 var(--border-radius);
+    }
+    .search-bar button {
+      padding: 0.5rem 1rem;
+      border: none;
+      background-color: var(--accent-color);
+      color: white;
+      border-radius: 0 var(--border-radius) var(--border-radius) 0;
+    }
+    .header-buttons button {
+      margin-left: 0.5rem;
+      background: var(--accent-color);
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: var(--border-radius);
+    }
+    main {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      padding: 2rem;
+    }
+    .product-top {
+        width: 500px;
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .product-image {
+      flex: 1;
+      min-width: 300px;
+    }
+    .product-image img {
+      width: 100%;
+      border-radius: var(--border-radius);
+    }
+    .product-details {
+      flex: 2;
+    }
+    .product-details h1 {
+      margin-bottom: 1rem;
+    }
+    .price {
+      font-size: 1.5rem;
+      color: var(--accent-color);
+      margin: 1rem 0;
+    }
+    .buy-button {
+      padding: 0.75rem 1.5rem;
+      background-color: var(--accent-color);
+      color: white;
+      border: none;
+      border-radius: var(--border-radius);
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .specs {
+      margin-top: 1rem;
+    }
+    .description {
+      background: #D2B48C;
+      padding: 1rem;
+      border-radius: var(--border-radius);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    footer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .footer-links, .footer-socials {
+      display: flex;
+      gap: 1rem;
+      margin-top: 0.5rem;
+    }
+    .footer-socials img {
+      width: 24px;
+      height: 24px;
+    }
+  </style>
+</head>
+<body>
+    
+  <header>
+    <div class="logo">Магазин</div>
+    <div class="search-bar">
+      <input type="text" placeholder="Пошук...">
+      <button>🔍</button>
+    </div>
+    <div class="header-buttons">
+      <button>👤</button>
+      <button>🛒</button>
+    </div>
+  </header>
+  <main>
+    <div class="product-top">
+      <div class="product-image">
+        <img src="https://i.pinimg.com/736x/48/50/67/485067d9570ba3f9a3cfd9c80dd38924.jpg" alt="Apple">
+      </div>
+      <div class="product-details">
+        <h1>Iphone 14 pro max</h1>
+        <p class="price">₴34999</p>
+        <p>Рейтинг: ⭐ 5.0 (200 відгуків)</p>
+        <p>Код товару: 194235</p>
+        <button class="buy-button">Додати до кошика</button>
+        <div class="specs">
+          <h3>Характеристики:</h3>
+          <ul>
+            <li>Дисплей: 6.5" OLED</li>
+            <li>Пам'ять: 128 ГБ</li>
+            <li>Камера: 48 Мп</li>
+            <li>Акумулятор: 4000 мА·г</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="description">
+      <h2>Опис</h2>
+      <p>Iphone 14 pro max поєднує в собі високу продуктивність та стильний дизайн. Ідеально підходить для щоденного використання, фото, ігор та роботи.</p>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-links">
+      <a href="#">Контакти</a>
+      <a href="#">Політика</a>
+      <a href="#">Умови використання</a>
+    </div>
+    <div class="footer-socials">
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Instagram"></a>
+    </div>
+    <div>&copy; Staff Shop, 2025</div>
+  </footer>
+</body>
+</html>

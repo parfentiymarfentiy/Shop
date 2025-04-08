@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Головна - Інтернет-магазин</title>
+  <style>
+    :root {
+      --primary-color: #a38068 ;
+      --accent-color: #e67e22;
+      --light-bg: #553409;
+      --dark-text: #333;
+      --border-radius: 8px;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: var(--light-bg);
+      color: var(--dark-text);
+    }
+    header, footer {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 1rem;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    .search-bar {
+      flex: 1;
+      margin: 0 1rem;
+      display: flex;
+    }
+    .search-bar input {
+      flex: 1;
+      padding: 0.5rem;
+      border: none;
+      border-radius: var(--border-radius) 0 0 var(--border-radius);
+    }
+    .search-bar button {
+      padding: 0.5rem 1rem;
+      border: none;
+      background-color: var(--accent-color);
+      color: white;
+      border-radius: 0 var(--border-radius) var(--border-radius) 0;
+    }
+    .header-buttons button {
+      margin-left: 0.5rem;
+      background: var(--accent-color);
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: var(--border-radius);
+    }
+    main {
+      padding: 2rem;
+    }
+    .carousel {
+      margin-bottom: 2rem;
+    }
+    .carousel h2 {
+      margin-bottom: 1rem;
+    }
+    .card-row {
+      display: flex;
+      overflow-x: auto;
+      gap: 1rem;
+    }
+    .card {
+     width: 200px;
+      min-width: 200px;
+      background: #D2B48C;
+      padding: 1rem;
+      border-radius: var(--border-radius);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      flex-shrink: 0;
+    }
+    .card img {
+      max-width: 100%;
+      border-radius: var(--border-radius);
+    }
+    .card h3 {
+      margin: 0.5rem 0;
+    }
+    footer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .footer-links, .footer-socials {
+      display: flex;
+      gap: 1rem;
+      margin-top: 0.5rem;
+    }
+    .footer-socials img {
+      width: 24px;
+      height: 24px;
+    }
+    @media(max-width: 600px) {
+      header, footer {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .search-bar {
+        margin: 1rem 0;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Магазин</div>
+    <div class="search-bar">
+      <input type="text" placeholder="Пошук...">
+      <button>🔍</button>
+    </div>
+    <div class="header-buttons">
+      <button>👤</button>
+      <button>🛒</button>
+    </div>
+  </header>
+  <main>
+    <section class="carousel">
+      <h2>Електроніка</h2>
+      <div class="card-row">
+        <div class="card">
+          <img src="https://i.pinimg.com/736x/de/6e/fa/de6efa9b3f6b0b7a093e7305cd4f7793.jpg" alt="Product">
+          <h3>Iphone 11 pro</h3>
+          <p>₴9999</p>
+        </div>
+        <div class="card">
+          <img src="https://i.pinimg.com/736x/48/50/67/485067d9570ba3f9a3cfd9c80dd38924.jpg" alt="Product">
+          <h3>Iphone 14 pro max</h3>
+          <p>₴34999</p>
+        </div>
+      </div>
+    </section>
+    <section class="carousel">
+      <h2>Одяг</h2>
+      <div class="card-row">
+        <div class="card">
+          <img src="https://static.staff-clothes.com/uploads/media/image_product/0003/76/585739a5a6d34f1e852b2d9147ad4809.jpeg" alt="Product">
+          <h3>Зимовi кросiвки Staff</h3>
+          <p>₴2360</p>
+        </div>
+        <div class="card">
+          <img src="https://static.staff-clothes.com/uploads/media/image_product/0002/72/044a3187b5184f6aaf562d1f4c885f9d.jpeg" alt="Product">
+          <h3>Зимова Куртка Staff</h3>
+          <p>₴1950</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-links">
+      <a href="#">Контакти</a>
+      <a href="#">Політика</a>
+      <a href="#">Умови використання</a>
+      <a href="#">Зв`язок</a>
+    </div>
+    <div class="footer-socials">
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter"></a>
+    </div>
+    <div>&copy; Staff Shop 2025</div>
+  </footer>
+</body>
+</html>

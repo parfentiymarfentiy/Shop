@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Категорії - Інтернет-магазин</title>
+  <style>
+    :root {
+      --primary-color: #a38068;
+      --accent-color: #e67e22;
+      --light-bg: #553409;
+      --dark-text: #333;
+      --border-radius: 8px;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: var(--light-bg);
+      color: var(--dark-text);
+    }
+    header, footer {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 1rem;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    .search-bar {
+      flex: 1;
+      margin: 0 1rem;
+      display: flex;
+    }
+    .search-bar input {
+      flex: 1;
+      padding: 0.5rem;
+      border: none;
+      border-radius: var(--border-radius) 0 0 var(--border-radius);
+    }
+    .search-bar button {
+      padding: 0.5rem 1rem;
+      border: none;
+      background-color: var(--accent-color);
+      color: white;
+      border-radius: 0 var(--border-radius) var(--border-radius) 0;
+    }
+    .header-buttons button {
+      margin-left: 0.5rem;
+      background: var(--accent-color);
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: var(--border-radius);
+    }
+    main {
+      padding: 2rem;
+    }
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+    .category-card {
+      width: 150px;
+      background: #D2B48C;
+      padding: 1rem;
+      border-radius: var(--border-radius);
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .category-card img {
+      width: 100%;
+      border-radius: var(--border-radius);
+      height: 150px;
+      object-fit: cover;
+    }
+    .category-card h3 {
+      margin: 1rem 0;
+    }
+    .category-card a {
+      display: inline-block;
+      background-color: var(--accent-color);
+      color: white;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      border-radius: var(--border-radius);
+    }
+    footer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .footer-links, .footer-socials {
+      display: flex;
+      gap: 1rem;
+      margin-top: 0.5rem;
+    }
+    .footer-socials img {
+      width: 24px;
+      height: 24px;
+    }
+    @media(max-width: 600px) {
+      header, footer {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .search-bar {
+        margin: 1rem 0;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Магазин</div>
+    <div class="search-bar">
+      <input type="text" placeholder="Пошук...">
+      <button>🔍</button>
+    </div>
+    <div class="header-buttons">
+      <button>👤</button>
+      <button>🛒</button>
+    </div>
+  </header>
+  <main>
+    <h1>Категорії</h1>
+    <div class="category-grid">
+      <div class="category-card">
+        <img src="https://i.pinimg.com/736x/48/50/67/485067d9570ba3f9a3cfd9c80dd38924.jpg" alt="Електроніка">
+        <h3>Електроніка</h3>
+        <a href="#">Перейти</a>
+      </div>
+      <div class="category-card">
+        <img src="https://static.staff-clothes.com/uploads/media/image_product/0002/72/044a3187b5184f6aaf562d1f4c885f9d.jpeg" alt="Одяг">
+        <h3>Одяг</h3>
+        <a href="#">Перейти</a>
+      </div>
+      <div class="category-card">
+        <img src="https://i.pinimg.com/736x/04/19/9a/04199aa0cc691ae137e9728bd1306a57.jpg" alt="Книги">
+        <h3>Книги</h3>
+        <a href="#">Перейти</a>
+      </div>
+      <!-- Додай ще категорії при бажанні -->
+    </div>
+  </main>
+  <footer>
+    <div class="footer-links">
+      <a href="#">Контакти</a>
+      <a href="#">Політика</a>
+      <a href="#">Умови використання</a>
+    </div>
+    <div class="footer-socials">
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Instagram"></a>
+    </div>
+    <div>&copy; Staff Shop 2025</div>
+  </footer>
+</body>
+</html>
